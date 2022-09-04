@@ -73,6 +73,6 @@ enable_testing()
 
 add_subdirectory(googletest)
 
-add_test(test_version test_version.cpp)
+add_test(test_version test_version)
 
 target_link_libraries(test_version gtest_main gmock_main)
