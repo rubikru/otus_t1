@@ -71,4 +71,8 @@ include(CPack)
 
 enable_testing()
 
-add_test(test_version test_version)
+add_subdirectory(googletest)
+
+add_test(test_version test_version.cpp)
+
+target_link_libraries(test_version gtest_main gmock_main)
